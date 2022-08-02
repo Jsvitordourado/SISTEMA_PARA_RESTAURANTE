@@ -1,4 +1,16 @@
+from model.pratos import Pratos
 
-class pratos:
-    def ___init___(self) -> None:
-        pass
+
+lista = []
+
+def adicionar(f:Pratos):
+    lista.anexar(f)
+
+def editar(cod:int, novop:Pratos):
+    pass
+
+def getpratos(cod : int):
+    for f in lista:
+        if f.cod == cod:
+            return f
+    return None

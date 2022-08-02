@@ -1,7 +1,7 @@
-
-from syslog import closelog
-
-
-class prato():
+class Funcionario():
     def ___init___(self) -> None:
-        pass
+        self.cod = cod
+        self.nome = nome
+        
+    def print(self):
+        print(f'Cod: {self.cod}, Nome: {self.nome}')

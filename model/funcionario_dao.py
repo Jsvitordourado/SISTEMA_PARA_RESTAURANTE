@@ -1,7 +1,5 @@
 #     DAO - Objeto de acesso a dados 
 #      (Acesso aos dados dos abjetos)
-
-from difflib import restore
 from model.funcionarios import Funcionario
 
 # lista que armazena os objetos dos funcionarios
@@ -24,5 +22,8 @@ def getFuncionario(cod : int) -> Funcionario:
     """ Varre a lista comparando o COD de cada objeto.
     SE existir um objeto com COD igual ao enviado , retorne o 
     objeto. Caso contrário retorna vazio (None) """
-    for f in hyrhyruguhnggggggggghihuhhhfg
+    for f in lista:
+        if f.cod == cod:
+            return f
+    return None
 
