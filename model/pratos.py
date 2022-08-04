@@ -1,6 +1,5 @@
 from model.pratos import Pratos
 
-
 lista = []
 
 def adicionar(f:Pratos):

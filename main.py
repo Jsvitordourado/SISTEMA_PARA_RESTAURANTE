@@ -33,19 +33,31 @@ else:
 #editar
 novoF = Funcionario(None, 'vitoria')
 f_dao.editar(2, novoF)
-
+#cria os obetos
 p1 = Pratos(0, 'Hanburg')
 p2 = Pratos(1, 'misto')
 p3 = Pratos(2, 'x-burg')
 p4 = Pratos(3, 'americano')
 p5 = Pratos(4, 'big')
-
-f_dao.adicionar(p1)
-f_dao.adicionar(p2)
-f_dao.adicionar(p3)
-f_dao.adicionar(p4)
-f_dao.adicionar(p5)
-
+#adiciona na ista
+p_dao.adicionar(p1)
+p_dao.adicionar(p2)
+p_dao.adicionar(p3)
+p_dao.adicionar(p4)
+p_dao.adicionar(p5)
+#imprime
 lista_punc = p_dao.get.lista()
+#busca peo codigo
 for punc in lista_punc:
     punc.print
+
+print('-------')
+punc = p_dao.getpratos(2)
+if punc != None:
+    punc.print()
+else:
+    print('Prato não encontrado.')
+
+#editar
+novop = Pratos(None, 'Hanburg')
+p_dao.editar(2, novop)

@@ -1,4 +1,5 @@
+from model.funcionarios import Funcionario
+import mode.pratos as p_dao
 
-class Venda:
-    def ___init___(self) -> None:
-        pass
+class Vendas():
+    pass
